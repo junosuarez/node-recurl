@@ -2,26 +2,28 @@
 post a file to a revisit service from the command line
 
 ## usage
-```js
-var recurl = require('recurl')
+```shell
+npm install -g recurl
+
+recurl < ~/butts.jpg > curl -X POST http://hiiamchris.com:4200 -H="content-type:application/json" | recurl --no-u > butts.gif && open butts.gif
+
+or
+
+recurl --service http://glitch.nothingissacred.org/rbspook/service < ~/butts.jpg | recurl --no-u > butts.gif && open butts.gif
+
 ```
 
-
 ## api
-
+haha
 
 ## installation
 
-    $ npm install recurl
+    $ npm install -g recurl
 
 
 ## running the tests
 
-From package root:
-
-    $ npm install
-    $ npm test
-
+haha
 
 ## contributors
 

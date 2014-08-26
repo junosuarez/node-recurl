@@ -3,15 +3,26 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "post a file to a revisit service from the command line",
-  "keywords": ["cli", "revisit.link", "revisit"],
+  "keywords": [
+    "cli",
+    "revisit.link",
+    "revisit"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "bin": "index.js",
   "repository": "git@github.com:jden/node-recurl.git",
   "license": "ISC",
   "readmeFilename": "README.md",
   "devDependencies": {
     "mochi": "0.1.0"
+  },
+  "dependencies": {
+    "mmmagic": "^0.3.8",
+    "concat-stream": "^1.4.6",
+    "data-uri-to-buffer": "0.0.3",
+    "request": "^2.40.0"
   }
 }
