@@ -6,18 +6,6 @@ var request = require('request')
 
 function recurl(serviceUrl) {
   var isRequest = !!serviceUrl
-  // console.log('serviceUrl', serviceUrl)
-  // var destStream = !serviceUrl ? process.stdout : request({
-  //   url: serviceUrl,
-  //   method: 'POST',
-  //   proxy: 'http://localhost:8888',
-  //   headers: {
-  //     'content-type': 'application-json'
-  //   }
-  // })
-
-  // console.log(destStream == process.stdout)
-  // process.exit()
 
   return concat(function (file) {
     var magic = new mmm.Magic(mmm.MAGIC_MIME_TYPE) // wtf?
@@ -36,7 +24,6 @@ function recurl(serviceUrl) {
         request.post({
           url: serviceUrl,
           json: true,
-          proxy: 'http://localhost:8888',
           headers: {'content-type':'application/json'},
           body: json
         }, function (e, res) {
